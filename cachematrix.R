@@ -1,4 +1,3 @@
-
 ## This program has two functions that creats a special matrix and returns the mean
 ##of that special matrix
 
@@ -33,3 +32,24 @@ cacheSolve <- function(x, ...) {
   x$setinv(inv)
   inv
 }
+#> source('C:/Users/HP/Desktop/ProgrammingAssignment2/cachematrix.R')
+#> mat<- makeCacheMatrix(x = matrix(1:4,2,2))
+#> mat$get()
+# [,1] [,2]
+# [1,]    1    3
+# [2,]    2    4
+#> mat$getinv()
+# NULL
+#> cacheSolve(mat)
+# [,1] [,2]
+# [1,]   -2  1.5
+# [2,]    1 -0.5
+#> mat$getinv()
+# ,1] [,2]
+# [1,]   -2  1.5
+# [2,]    1 -0.5
+#> cacheSolve(mat)
+# getting value from cached data
+# [,1] [,2]
+# [1,]   -2  1.5
+# [2,]    1 -0.5
